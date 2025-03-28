@@ -1,0 +1,98 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    background-color: #ffe6ea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#container {
+    background-color: #ffccd5;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+/* Animasi Melompat */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Animasi Goyang */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+}
+
+/* Gambar kucing melompat */
+#cat {
+    width: 150px;
+    margin: 15px 0;
+    animation: bounce 1s infinite;
+}
+
+/* Gambar pasangan bergoyang */
+#couple {
+    width: 150px;
+    margin: 15px 0;
+    animation: shake 0.5s infinite;
+}
+
+h2 {
+    color: #d75a7a;
+    font-size: 18px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    font-size: 14px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#yes {
+    background-color: #ff6680;
+    color: white;
+}
+
+/* Tombol No akan menghindar */
+#no {
+    background-color: #ff4d4d;
+    color: white;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.creator-label {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.creator-label:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
